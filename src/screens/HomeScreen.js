@@ -1,14 +1,18 @@
 import React from 'react';
-import { Text, StyleSheet } from 'react-native';
+import { Text, StyleSheet, View } from 'react-native';
 
 const HomeScreen = () => {
-  return <Text style={styles.text}>GaBa</Text>;
+  const myName = "Gaba";
+  return <View><Text style={styles.text}>Hi everyone</Text><Text>My name is {myName}</Text></View>
 };
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 30,
+    fontSize: 45,
   },
+  subText : {
+    fontSize: 25,
+  }
 });
 
 export default HomeScreen;

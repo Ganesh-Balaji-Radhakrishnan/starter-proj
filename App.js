@@ -9,7 +9,7 @@ const navigator = createStackNavigator(
     Components: ComponentScreen
   },
   {
-    initialRouteName: "Components",
+    initialRouteName: "Home",
     defaultNavigationOptions: {
       title: "Gaba's App",
     },
