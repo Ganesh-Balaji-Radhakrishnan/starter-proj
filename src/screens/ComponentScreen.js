@@ -1,9 +1,7 @@
 import React from 'react'
 import { Text, StyleSheet } from 'react-native'
 
-function ComponentScreen() {
-  return <Text style={styles.text}>Component-Screens</Text>
-}
+const ComponentScreen = () => <Text style={styles.text}>ComponentScreens</Text>
 
 const styles = StyleSheet.create({
   text: {

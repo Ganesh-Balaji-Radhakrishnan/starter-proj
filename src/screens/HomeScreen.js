@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
   },
 })
 
-function HomeScreen() {
+const HomeScreen = () => {
   const myName = 'gaba'
   return (
     <View>
