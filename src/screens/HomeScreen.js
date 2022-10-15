@@ -1,24 +1,26 @@
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/prop-types */
 import React from 'react'
-import { Text, StyleSheet, View } from 'react-native'
+import { View, Text, StyleSheet, Button } from 'react-native'
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 45,
-  },
-  subText: {
-    fontSize: 25,
+    fontSize: 20,
+    textAlign: 'center',
+    marginVertical: 10,
   },
 })
 
-const HomeScreen = () => {
-  const myName = 'gaba'
-  return (
-    <View>
-      <Text style={styles.text}>Hi everyone</Text>
-      <Text>My name is {myName}</Text>
-    </View>
-  )
-}
+const HomeScreen = (props) => (
+  <View>
+    <Text style={styles.text}>Hi everyone</Text>
+    <Button
+      onPress={() => props.navigation.navigate('Components')}
+      title="go to components screen"
+    />
+    <Button onPress={() => props.navigation.navigate('List')} title="go to list screen" />
+  </View>
+)
 
 export default HomeScreen
 
