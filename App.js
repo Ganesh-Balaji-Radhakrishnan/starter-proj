@@ -1,19 +1,21 @@
-import { createAppContainer } from "react-navigation";
-import { createStackNavigator } from "react-navigation-stack";
-import HomeScreen from "./src/screens/HomeScreen";
-import ComponentScreen from "./src/screens/ComponentScreen"
+import { createAppContainer } from 'react-navigation'
+import { createStackNavigator } from 'react-navigation-stack'
+import HomeScreen from './src/screens/HomeScreen'
+import ComponentScreen from './src/screens/ComponentScreen'
+import ListScreen from './src/screens/ListScreen'
 
 const navigator = createStackNavigator(
   {
     Home: HomeScreen,
-    Components: ComponentScreen
+    Components: ComponentScreen,
+    List: ListScreen,
   },
   {
-    initialRouteName: "Home",
+    initialRouteName: 'List',
     defaultNavigationOptions: {
       title: "Gaba's App",
     },
   }
-);
+)
 
-export default createAppContainer(navigator);
+export default createAppContainer(navigator)
