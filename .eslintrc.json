@@ -27,12 +27,16 @@
         // prevent eslint to complain about the "styles" variable being used before it was defined
         "no-use-before-define": ["error", { "variables": false }],
 
+        //allow lint rules to use arrowfunction
         "react/function-component-definition": [2, {
             "namedComponents": "arrow-function" ,
             "unnamedComponents":  "arrow-function" 
         }],
 
+        //allow destructing of the prop types
         "react/destructuring-assignment": [1, "always", { "ignoreClassFields": true, "destructureInSignature": "ignore" }],
+        
+        //allow undeclared prop types
         "react/prop-types": [1, {"skipUndeclared": true}]
 
     }
